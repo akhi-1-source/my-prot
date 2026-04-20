@@ -303,11 +303,109 @@ table {
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
 */
+<style>
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
 
+  .image-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .image-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* This keeps images uniform size without stretching */
+    display: block;
+  }
+
+  .image-caption {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+    font-family: sans-serif;
+  }
+<div class="image-gallery">
+  <div class="image-card">
+    <img src="ARATA 1-1.png" alt="Arata 1-1">
+    <div class="image-caption">Arata 1:1</div>
+  </div>
+  <div class="image-card">
+    <img src="ARATA 16-9.png" alt="Arata 16-9">
+    <div class="image-caption">Arata 16:9</div>
+  </div>
+  <div class="image-card">
+    <img src="ARATA 9-16.png" alt="Arata 9-16">
+    <div class="image-caption">Arata 9:16</div>
+  </div>
+
+  <div class="image-card">
+    <img src="Image%20Mar%2018,%202026,%2011_41_25%20PM.png" alt="AI Gen 1">
+    <div class="image-caption">Creative Concept 1</div>
+  </div>
+  <div class="image-card">
+    <img src="Image%20Mar%2019,%202026,%2008_35_48%20AM.png" alt="AI Gen 2">
+    <div class="image-caption">Creative Concept 2</div>
+  </div>
+  <div class="image-card">
+    <img src="Image%20Mar%2019,%202026,%2012_11_31%20AM.png" alt="AI Gen 3">
+    <div class="image-caption">Creative Concept 3</div>
+  </div>
+
+  <div class="image-card">
+    <img src="a_A_modern_Indian_wedd.jpeg" alt="Indian Wedding">
+    <div class="image-caption">Modern Indian Wedding</div>
+  </div>
+  <div class="image-card">
+    <img src="b_A_modern_Indian_wedd.png" alt="Indian Wedding 2">
+    <div class="image-caption">Wedding Portrait</div>
+  </div>
+  <div class="image-card">
+    <img src="a_A_beautiful_young_In.png" alt="Young Indian Woman">
+    <div class="image-caption">Portrait A</div>
+  </div>
+  <div class="image-card">
+    <img src="b_A_beautiful_young_In.png" alt="Young Indian Woman 2">
+    <div class="image-caption">Portrait B</div>
+  </div>
+  <div class="image-card">
+    <img src="b_A_handsome,_confiden.jpeg" alt="Confident Man">
+    <div class="image-caption">Professional Portrait</div>
+  </div>
+
+  <div class="image-card">
+    <img src="a_“High-converting_Met.png" alt="Meta Ad">
+    <div class="image-caption">High Converting Meta Asset</div>
+  </div>
+  <div class="image-card">
+    <img src="a_“Photorealistic_Meta.jpeg" alt="Meta Realistic">
+    <div class="image-caption">Photorealistic Meta Style</div>
+  </div>
+  <div class="image-card">
+    <img src="a_“Clean_professional_.png" alt="Professional Clean">
+    <div class="image-caption">Clean Professional Design</div>
+  </div>
+</div>        
+</style>
 button,
 input,
 optgroup,
 select,
+        
+</style>
 textarea {
   font-family: inherit; /* 1 */
   font-feature-settings: inherit; /* 1 */
